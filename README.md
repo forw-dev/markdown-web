@@ -1,4 +1,4 @@
-# Markdown Web (mdWeb)
+# Markdown Web (mdweb)
 
 ## 1. 概述
 
