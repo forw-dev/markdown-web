@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # 其他所有请求都交给 index.php 处理
+    # 将请求的路径作为 'path' GET 参数传递
+    RewriteRule ^(.*)\.md$ index.php?path=$1.md [L]
+</IfModule>

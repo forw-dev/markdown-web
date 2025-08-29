@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  /* 继承父元素颜色 */
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background: linear-gradient(to right, #5f91ec, #5fb4ec);
+  color: white;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+header .container {
+  display: flex;
+  /* 启用 Flexbox 布局 */
+  justify-content: space-between;
+  /* 子元素两端对齐 */
+  align-items: center;
+  /* 子元素垂直居中 */
+}
+
+header nav {
+  font-weight: bold;
+}
+
+main {
+  /* 让main元素占据所有剩余的垂直空间，从而将footer推到底部 */
+  flex: 1;
+  padding: 0.5rem 2rem;
+}
+
+main a {
+  color: #0059ff !important;
+}
+
+footer {
+  background: linear-gradient(to right, #5f91ec, #5fb4ec);
+  color: #eee;
+  padding: 2rem;
+}
+
+footer nav {
+  margin: 0.5rem 0;
+}
+
+table {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-spacing: 0;
+}
+
+table th {
+  padding: 0.2rem 0.8rem;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+table td {
+  padding: 0.2rem 0.8rem;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+code {
+  padding: 2px 6px;
+  background-color: #eee;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+pre {
+  padding: 0.8rem 1rem;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
