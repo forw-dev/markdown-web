@@ -1,3 +1,8 @@
+---
+title: Terms of Service | forw.cc
+author: forw.cc, inbox@forw.cc
+---
+
 # Terms of Service
 
 By accessing, reading, downloading, or using this website, you agree to comply with these Terms of Service. If you do not agree, please stop using the website immediately. We reserve the right to modify these Terms at any time and provide interpretation as permitted by law.

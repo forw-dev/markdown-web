@@ -1,3 +1,8 @@
+---
+title: Privacy Policy | forw.cc
+author: forw.cc, inbox@forw.cc
+---
+
 # Privacy Policy
 
 We respect the privacy of our users. We do not collect user information without their consent. For any user emails, information, and addresses obtained due to service needs, we promise not to disclose them to third parties without the user's permission.
