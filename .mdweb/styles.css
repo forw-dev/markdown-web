@@ -5,7 +5,12 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 a:link,
@@ -19,11 +24,6 @@ nav {
   display: flex;
   gap: 1.5rem; 
   flex-wrap: wrap;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 header {
@@ -64,6 +64,10 @@ footer {
 
 footer nav {
   margin: 0.5rem 0;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 table {
