@@ -1,5 +1,5 @@
-<?php include './.mdweb/MarkdownWeb.php'; ?>
-
+<?php include '.mdweb/config.php'; ?>
+<?php include '.mdweb/markdown-web.php'; ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -22,34 +22,13 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="https://forw.cc">
-          <img src="<?php echo $base_url?>/.mdweb/logo.png" alt="logo">
-        </a>
-      </div>
-      <nav>
-        <a href="<?php echo $base_url; ?>/">Home</a>
-      </nav>
-    </div>
-  </header>
+  <?php include '.mdweb/header.php'; ?>
   <main>
     <div class="container">
       <?php echo $main; ?>
     </div>
   </main>
-  <footer>
-    <div class="container">
-      <nav>
-        <!-- <a href="#">About Us</a> | -->
-        <!-- <a href="#">Support Us</a> | -->
-        <a href="<?php echo $base_url; ?>/privacy-policy.md">Privacy Policy</a> |
-        <a href="<?php echo $base_url; ?>/terms-of-service.md">Terms of Service</a>
-      </nav>
-      <p>&copy; 2025 forw.cc</p>
-    </div>
-  </footer>
+  <?php include '.mdweb/footer.php'; ?>
 </body>
 
 </html>
