@@ -1,6 +1,6 @@
 ---
 title: Terms of Service | forw.cc
-author: forw.cc, inbox@forw.cc
+author: forw.cc, tyx@forw.cc
 ---
 
 # Terms of Service

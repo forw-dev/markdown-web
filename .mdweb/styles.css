@@ -56,6 +56,11 @@ main a {
   color: #0059ff !important;
 }
 
+main h1 {
+  font-size: 2.2rem;
+  margin: 2rem 0;
+}
+
 footer {
   background: linear-gradient(to right, #5f91ec, #5fb4ec);
   color: #eee;
@@ -64,10 +69,6 @@ footer {
 
 footer nav {
   margin: 0.5rem 0;
-}
-
-h1 {
-  font-size: 2rem;
 }
 
 table {

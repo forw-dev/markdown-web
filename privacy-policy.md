@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy | forw.cc
-author: forw.cc, inbox@forw.cc
+author: forw.cc, tyx@forw.cc
 ---
 
 # Privacy Policy
