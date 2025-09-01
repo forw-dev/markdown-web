@@ -1,7 +1,11 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
-    # 其他所有请求都交给 index.php 处理
-    # 将请求的路径作为 'path' GET 参数传递
+    # 1. 将对目录的访问转换为对 `default.md` 文件的访问
+    # 2. 将对 `.md` 文件的访问交给 `index.php` 处理
+    # 3. 将请求的路径作为 'path' GET 参数传递
+    # 示例： /abc/ -> index.php?path=abc/default.md
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^(.+[^/])/?$ $1/default.md [L]
     RewriteRule ^(.*)\.md$ index.php?path=$1.md [L]
 </IfModule>

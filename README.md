@@ -12,7 +12,7 @@
 ## 3. 快速开始
 
 - 放置 `.htaccess`、 `index.php`、 `.mdweb/` 到主机目录。
-- 放置 `.md` 文件到主机目录，`index.md` 为内容的入口文件。
+- 放置 `.md` 文件到主机目录，`default.md` 默认为内容的入口文件。
 - 用浏览器访问 `.md` 文件，Markdown 已被渲染。
 
 ## 4. SEO

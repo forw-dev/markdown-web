@@ -4,6 +4,8 @@
 <html lang="zh-CN">
 
 <head>
+  <?php include 'google-tag.php'; ?>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

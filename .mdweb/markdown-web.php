@@ -1,9 +1,13 @@
 <?php
 # 
 # 
-# 用 `.htaccess` 将对 '.md' 和 '.php' 文件的请求重定向到 'index.php'，其它请求都不变。
-# 如果是 '.md'，在 'index.php' 中，获取请求的文件路径，读取文件内容，渲染成 html，输出到页面。
-# 如果是 '.php'，在 'index.php' 中，获取请求的文件路径，包含文件，执行文件，输出到页面。
+# 用 `.htaccess` 文件:
+# - 将对目录的访问转换为对 `default.md` 文件的访问。
+# - 将对 `.md` 文件的访问交给 `index.php` 处理。
+# - 将请求的路径作为 GET 方法的 'path' 参数传递。
+# - 其它请求都不变。
+# 示例： /abc/ -> /index.php?path=abc/default.md
+# 在 'index.php' 中，获取请求的文件路径，读取文件内容，渲染成 html，输出到页面。
 #
 #
 
@@ -19,7 +23,7 @@ $main = '';
 $page_title = '';
 
 // 获取并验证文件路径
-$file_path = $_GET['path'] ?? 'index.md';
+$file_path = $_GET['path'] ?? 'default.md'; // 对根目录的访问不会过 .htaccess
 $file_path = trim($file_path);
 
 // 安全检查：防止路径穿越攻击
