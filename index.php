@@ -19,7 +19,7 @@
 
   <title><?php echo htmlspecialchars($page_title); ?></title>
 
-  <link rel="icon" href="<?php echo $base_url; ?>/.mdweb/fav.ico" type="image/x-icon">
+  <link rel="icon" href="<?php echo $base_url; ?>/.mdweb/favicon.png">
   <link rel="stylesheet" href="<?php echo $base_url; ?>/.mdweb/styles.css">
 </head>
 
