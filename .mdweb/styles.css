@@ -114,6 +114,13 @@ hr {
   margin: 2rem 0;
 }
 
+blockquote {
+  margin: 1rem 0;
+  padding: 0.1rem 1rem;
+  border-left: 4px solid #5f91ec;
+  background-color: #f5f5f5;
+}
+
 @media (max-width: 600px) {
   nav {
     flex-direction: column; 
