@@ -121,6 +121,16 @@ if (count($markdown_lines) > 0){
     $markdown = implode("\n", $markdown_lines);
     $Parsedown = new Parsedown();
     $main = $Parsedown->text($markdown);
+    
+    // 后处理：将 mermaid 代码块转换为 mermaid div
+    $main = preg_replace_callback(
+        '/<pre><code class="language-mermaid">(.*?)<\/code><\/pre>/s',
+        function($matches) {
+            $content = html_entity_decode($matches[1], ENT_QUOTES | ENT_HTML5);
+            return '<div class="mermaid">' . htmlspecialchars($content, ENT_NOQUOTES) . '</div>';
+        },
+        $main
+    );
 }
 
 // 如果 main 还是空的

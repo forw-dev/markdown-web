@@ -34,3 +34,8 @@ copyright: Copyright © 2025 forw.cc                 # 页面版权，默认值�
 - `index.php` 保持着清晰的原始结构，直接编辑即可。
 - 其它资源都在 `.mdweb/` 目录中。
 - 对目录的访问，如果没有 `index.php` 文件就转向 `default.md`。
+
+## 6. 其它
+
+- 支持 KaTeX 公式。
+- 支持 Mermaid 图表。
