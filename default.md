@@ -1,5 +1,1 @@
----
-title: Home
----
-
 Hello World
