@@ -224,12 +224,14 @@ $data = base64_encode($md_file_content);
       } else {
         content = data;
       }
+      /*    
       if (frontMatter.protect == true) {
         const script = document.createElement('script');
         script.src = 'https://forw.cc/static/front-end-protect.js';
         script.async = true; 
         document.head.appendChild(script);
-      }
+      } 
+      */
       // 渲染 Markdown
       const html = md.render(content);
       // 插入渲染后的 HTML
